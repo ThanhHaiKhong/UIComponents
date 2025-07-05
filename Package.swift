@@ -18,7 +18,6 @@ let package = Package(
         .singleTargetLibrary("SettingsView"),
         .singleTargetLibrary("ModalTransition"),
         .singleTargetLibrary("WaveformView"),
-		.singleTargetLibrary("AutoHidingStackView"),
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", branch: "main"),
@@ -40,8 +39,6 @@ let package = Package(
                 "EditorChoiceView",
                 "SettingsView",
                 "ModalTransition",
-				"AutoHidingStackView",
-				"PaddedLabel"
             ]
         ),
         .target(
@@ -88,12 +85,6 @@ let package = Package(
         .target(
             name: "WaveformView",
         ),
-		.target(
-			name: "AutoHidingStackView",
-		),
-		.target(
-			name: "PaddedLabel",
-		),
     ]
 )
 
